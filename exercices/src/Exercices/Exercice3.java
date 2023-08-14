@@ -1,5 +1,9 @@
 package Exercices;
 
+import com.sun.tools.javac.Main;
+
+import java.util.Scanner;
+
 public class Exercice3 {
 
     /*
@@ -8,6 +12,19 @@ public class Exercice3 {
     puis qui affiche si ce nombre est pair ou impair.
      */
     public static void main(String[] args) {
-        
+
+        Scanner sc = new Scanner(System.in);
+        System.out.println("saisir la valeur");
+        int zaz = sc.nextInt();
+        Exercice3.pairOuImpair(zaz);
+
+    }
+
+    public static void pairOuImpair(int nbSaisie) {
+        if (nbSaisie % 2 == 0) {
+            System.out.println("Pair");
+        } else {
+            System.out.println("Impair");
+        }
     }
 }
