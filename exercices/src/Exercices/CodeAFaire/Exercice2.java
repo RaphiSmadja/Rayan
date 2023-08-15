@@ -1,4 +1,4 @@
-package Exercices;
+package Exercices.CodeAFaire;
 
 import java.util.Scanner;
 

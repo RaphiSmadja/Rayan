@@ -1,6 +1,4 @@
-package Exercices;
-
-import com.sun.tools.javac.Main;
+package Exercices.CodeAFaire;
 
 import java.util.Scanner;
 

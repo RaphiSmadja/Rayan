@@ -1,4 +1,4 @@
-package Exercices;
+package Exercices.CodeAFaire;
 
 public class Exercice5 {
 
