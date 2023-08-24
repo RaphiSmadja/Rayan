@@ -1,5 +1,7 @@
 package Exercices.CodeAFaire;
 
+import java.util.Scanner;
+
 public class Exercice6 {
 
     /*
@@ -19,6 +21,15 @@ public class Exercice6 {
      */
 
     public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        System.out.println("Saisir un chiffre: ");
+        int nb = sc.nextInt();
+        int res;
 
+        for (int i = 1; i < 11; i++) {
+            res = i * nb;
+            System.out.println("BONJOUR I = " + i + res);
+            System.out.println(nb + "*" + i + "=" + res);
+        }
     }
 }
