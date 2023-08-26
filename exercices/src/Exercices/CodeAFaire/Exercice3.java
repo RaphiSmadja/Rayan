@@ -16,6 +16,7 @@ public class Exercice3 {
         int zaz = sc.nextInt();
         Exercice3.pairOuImpair(zaz);
 
+
     }
 
     public static void pairOuImpair(int nbSaisie) {
