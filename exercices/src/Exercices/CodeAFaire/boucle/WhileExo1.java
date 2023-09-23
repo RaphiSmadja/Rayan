@@ -10,7 +10,7 @@ public class WhileExo1 {
      */
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
-
+        System.out.println(0%2);
         System.out.println("Saisir un nombre: ");
 
         int nb1 = sc.nextInt();
