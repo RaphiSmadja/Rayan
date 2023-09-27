@@ -1,7 +1,8 @@
-package Exercices.CodeAFaire.tp1;
+package Exercices.CodeAFaire.tp1.Resto;
 
-public class Restaurant {
-    /*
+import java.util.Scanner;
+
+/*
     Exercice : Gestionnaire de Restaurant
     Vous allez créer un programme Java qui simule la gestion d'un restaurant. Le programme permettra d'ajouter des plats au menu, de passer des commandes, d'afficher les commandes en cours, de calculer le total de la commande, et de quitter le programme.
 
@@ -67,6 +68,61 @@ Sortie du programme : L'utilisateur doit avoir la possibilité de quitter le pro
      *
      * Merci d'avoir utilisé notre service !
      */
+public class Main {
+    public static void main(String[] args) {
+        Restaurant restaurant = new Restaurant();
+        Scanner scanner = new Scanner(System.in);
+        boolean sortie = false;
+        while (sortie == false) {
+            System.out.println("Menu du restaurant : ");
+            restaurant.afficherMenu();
+            Main.afficherOptions();
+            int choix = scanner.nextInt();
+            switch (choix) {
+                case 1:
+                    // ajout plat
+                    System.out.println("Entrez le nom du plat");
+                    String nomPlat = scanner.next();
+                    System.out.println("Entrez le prix du plat");
+                    float price = scanner.nextFloat();
+                    Plat plat = new Plat(4,nomPlat, price);
+                    restaurant.ajoutPlatAuMenu(plat);
+                    System.out.println("plat ajouté");
+                    break;
+                case 2:
+                    // passer une commande
+                    break;
+                case 3:
+                    //afficher
+                    break;
+                case 4:
+                    //total
+                    break;
+                case 5:
+                    sortie = true;
+                    break;
+                default:
+                    System.out.println("Probleme de saisie");
+            }
 
+            Main.sautdeLigne();
+        }
+    }
 
+    public static void afficherOptions() {
+        System.out.println("\n\n" +
+                "* Options :\n" +
+                "     * 1. Ajouter un plat au menu\n" +
+                "     * 2. Passer une commande\n" +
+                "     * 3. Afficher les commandes en cours\n" +
+                "     * 4. Calculer le total de la commande\n" +
+                "     * 5. Quitter\n" +
+                "     * Choisissez une option : ");
+    }
+
+    public static void sautdeLigne() {
+        for (int i = 0; i < 20; i++) {
+            System.out.println();
+        }
+    }
 }
