@@ -7,7 +7,7 @@ public class MasterMyster {
     private static final int CODE_LENGTH = 4;  // Longueur du code secret
     private static final int MAX_GUESSES = 10;  // Nombre maximum d'essais
 
-    private static final char[] COLORS = {'R', 'G', 'B', 'Y', 'O', 'P'};  // Couleurs possibles
+    private static final char[] COLORS = {'R', 'G', 'B', 'Y', 'O', 'P'};
 
     private char[] secretCode;
 
@@ -40,7 +40,7 @@ public class MasterMyster {
         for (int i = 0; i < CODE_LENGTH; i++) {
             if (guess.charAt(i) == secretCode[i]) {
                 result[0]++;
-                secretCodeList.set(i, ' ');  // Marquer la position déjà validée
+                secretCodeList.set(i, ' ');
             }
         }
 

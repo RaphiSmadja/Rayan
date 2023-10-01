@@ -9,11 +9,23 @@ public class Commande {
         this.quantite = quantite;
     }
 
-    public void afficherCommande() {
-        System.out.println(plat.getIndex() +". " + plat.getNom() + " x" + quantite);
-    }
-
     public void calculerPrixCommande() {
         System.out.println("Total de la commande : $" +plat.getPrix() * quantite);
+    }
+
+    public Plat getPlat() {
+        return plat;
+    }
+
+    public void setPlat(Plat plat) {
+        this.plat = plat;
+    }
+
+    public int getQuantite() {
+        return quantite;
+    }
+
+    public void setQuantite(int quantite) {
+        this.quantite = quantite;
     }
 }

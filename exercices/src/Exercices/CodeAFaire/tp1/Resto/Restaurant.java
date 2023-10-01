@@ -8,17 +8,19 @@ public class Restaurant {
     private List<Commande> commandes = new ArrayList<>();
 
     public Restaurant() {
-        Plat plat1 = new Plat(1, "Pizza", 10.99f);
-        Plat plat2 = new Plat(2, "Hamburger", 12.50f);
-        Plat plat3 = new Plat(3, "Salade", 7.99f);
+        Plat plat1 = new Plat("Pizza", 10.99f);
+        Plat plat2 = new Plat("Hamburger", 12.50f);
+        Plat plat3 = new Plat("Salade", 7.99f);
         ajoutPlatAuMenu(plat1);
         ajoutPlatAuMenu(plat2);
         ajoutPlatAuMenu(plat3);
     }
 
     public void afficherMenu() {
+        int i = 1;
         for (Plat plat : menu) {
-            System.out.println(plat.getIndex() + ". " + plat.getNom() + " - $" + plat.getPrix());
+            System.out.println(i + ". " + plat.getNom() + " - $" + plat.getPrix());
+            i++;
         }
     }
 
@@ -40,5 +42,9 @@ public class Restaurant {
 
     public void ajoutPlatAuMenu(Plat plat) {
         this.menu.add(plat);
+    }
+
+    public void ajoutCommandeAuRestaurant(Commande commande) {
+        this.commandes.add(commande);
     }
 }

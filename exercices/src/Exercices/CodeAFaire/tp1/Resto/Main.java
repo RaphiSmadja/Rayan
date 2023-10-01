@@ -1,5 +1,6 @@
 package Exercices.CodeAFaire.tp1.Resto;
 
+import java.util.List;
 import java.util.Scanner;
 
 /*
@@ -85,18 +86,41 @@ public class Main {
                     String nomPlat = scanner.next();
                     System.out.println("Entrez le prix du plat");
                     float price = scanner.nextFloat();
-                    Plat plat = new Plat(4,nomPlat, price);
+                    Plat plat = new Plat(nomPlat, price);
                     restaurant.ajoutPlatAuMenu(plat);
                     System.out.println("plat ajouté");
                     break;
                 case 2:
                     // passer une commande
+                    restaurant.afficherMenu();
+                    System.out.println("Entrez le numéro du plat à commander : ");
+                    int choicePlat = scanner.nextInt();
+                    System.out.println("Entrez la quantité : ");
+                    int quantite = scanner.nextInt();
+                    if (choicePlat <= restaurant.getMenu().size() && choicePlat > 0 && quantite > 0) {
+                        Commande commande = new Commande(restaurant.getMenu().get(choicePlat - 1), quantite);
+                        restaurant.ajoutCommandeAuRestaurant(commande);
+                        System.out.println("Commande passée");
+                    } else {
+                        System.out.println("Erreur refaite votre commande");
+                    }
                     break;
                 case 3:
-                    //afficher
+                    //afficher les commandes
+                    System.out.println("Commandes en cours :");
+                    List<Commande> commandes = restaurant.getCommandes();
+                    for (Commande commande : commandes) {
+                        System.out.println(commande.getPlat().getNom() + " x" + commande.getQuantite());
+                    }
                     break;
                 case 4:
-                    //total
+                    //total des commandes
+                    List<Commande> commandesPassees = restaurant.getCommandes();
+                    float total = 0;
+                    for (Commande commande: commandesPassees) {
+                        total += (commande.getPlat().getPrix() * commande.getQuantite());
+                    }
+                    System.out.println("Total de la commande : " + total);
                     break;
                 case 5:
                     sortie = true;
