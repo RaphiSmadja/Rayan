@@ -33,14 +33,15 @@ public class MasterMyster {
         int[] result = new int[2];  // result[0] : nombre de bonnes positions, result[1] : nombre de bonnes couleurs
 
         List<Character> secretCodeList = new ArrayList<>();
-        for (char c : secretCode) {
+        for (char c : secretCode) { // secretCode = 'RGOY'
             secretCodeList.add(c);
         }
 
+
         for (int i = 0; i < CODE_LENGTH; i++) {
-            if (guess.charAt(i) == secretCode[i]) {
+            if (guess.charAt(i) == secretCode[i]) { // 'OGRY'
                 result[0]++;
-                secretCodeList.set(i, ' ');
+                secretCodeList.set(i, ' ');         // 'RGOY' ; 'R OY'
             }
         }
 
