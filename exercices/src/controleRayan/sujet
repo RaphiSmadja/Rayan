@@ -1,0 +1,29 @@
+Exercice 1 : Moyenne d'un tableau
+
+Écrivez un programme Java qui calcule la moyenne des éléments d'un tableau d'entiers. Utilisez une boucle pour parcourir le tableau et une variable pour stocker la somme totale des éléments. Ensuite, divisez la somme par le nombre d'éléments pour obtenir la moyenne.
+
+Exercice 2 : Recherche d'élément
+
+Écrivez un programme qui recherche un élément donné dans un tableau d'entiers. Si l'élément est trouvé, affichez son indice. Si l'élément n'est pas présent, affichez un message indiquant qu'il n'a pas été trouvé.
+
+Exercice 3 : Filtre de tableau
+
+Écrivez un programme qui filtre les éléments pairs d'un tableau d'entiers et les stocke dans un nouveau tableau. Ensuite, affichez le nouveau tableau contenant uniquement les éléments pairs.
+
+Exercice 4 : Compter les occurrences
+
+Écrivez un programme qui compte combien de fois un élément particulier apparaît dans un tableau d'entiers. Affichez le nombre d'occurrences de cet élément.
+
+Exercice 5 : Inversion d'un tableau
+
+Écrivez un programme qui inverse les éléments d'un tableau d'entiers. Par exemple, si le tableau est [1, 2, 3, 4], le programme devrait le transformer en [4, 3, 2, 1].
+
+Exercice 6 : Palindrome
+
+Écrivez un programme qui vérifie si une chaîne de caractères est un palindrome. Un palindrome est une séquence de caractères qui se lit de la même manière de gauche à droite et de droite à gauche. Par exemple, "radar" est un palindrome.
+
+Exercice 7 : Tri de tableau
+
+Écrivez un programme qui trie un tableau d'entiers dans l'ordre croissant en utilisant l'algorithme de tri à bulles ou un autre algorithme de tri de votre choix.
+
+Ces exercices vous permettront de pratiquer l'utilisation de boucles, de conditions et de collections en Java. N'hésitez pas à demander de l'aide si vous en avez besoin ou si vous avez des questions sur l'un de ces exercices !
