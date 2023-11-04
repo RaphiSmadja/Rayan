@@ -27,3 +27,54 @@ Exercice 7 : Tri de tableau
 Écrivez un programme qui trie un tableau d'entiers dans l'ordre croissant en utilisant l'algorithme de tri à bulles ou un autre algorithme de tri de votre choix.
 
 Ces exercices vous permettront de pratiquer l'utilisation de boucles, de conditions et de collections en Java. N'hésitez pas à demander de l'aide si vous en avez besoin ou si vous avez des questions sur l'un de ces exercices !
+
+/********************************************************/
+
+Exercice 1 : Recherche d'un élément dans un tableau
+Écrivez une méthode en Java pour rechercher la présence d'un élément dans un tableau et retourner l'index de cet élément s'il est trouvé, sinon retourner -1.
+
+Exercice 2 : Calcul de la somme des éléments d'un tableau
+
+Exercice 3 : Compter le nombre d'occurrences d'un caractère dans une chaîne
+             Écrivez une méthode pour compter le nombre d'occurrences d'un caractère donné dans une chaîne.
+
+
+
+
+Titre du Projet : Jeu du Cowboy - Duel en Java
+
+Description :
+
+Vous allez développer un jeu de duel de cowboys en utilisant Java.
+Le jeu se déroule entre plusieurs joueurs qui doivent s'éliminer les uns les autres en utilisant des actions spécifiques telles que "Tirer", "Recharger" ou "Bouclier".
+
+Fonctionnalités attendues :
+
+Classe Joueur :
+
+Un joueur possède un nombre de vies.
+Il peut cumuler un nombre défini de balles pour son pistolet.
+Le joueur peut perdre une vie ou une balle en fonction de ses actions.
+Classe JeuDuCowboy :
+
+Gère le déroulement du jeu.
+Gère les interactions entre les différents joueurs.
+Détermine le gagnant ou les gagnants à la fin du jeu.
+Règles du jeu :
+
+Chaque joueur commence avec un nombre défini de vies (par exemple, 3).
+Chaque joueur commence avec une seule balle pour son pistolet.
+Les joueurs ont le choix entre les actions "Tirer", "Recharger" ou "Bouclier" à chaque tour.
+Si un joueur tire sur un adversaire qui n'utilise pas de "Bouclier", l'adversaire perd une vie.
+Si deux joueurs se tirent dessus simultanément, les deux perdent une vie.
+Si un joueur utilise un "Bouclier", il est protégé contre un tir adverse.
+Instructions :
+
+Implémentez la classe Joueur avec ses attributs, méthodes et actions disponibles pour chaque joueur.
+Implémentez la classe JeuDuCowboy pour gérer le déroulement du jeu, les interactions entre les joueurs et déterminer les vainqueurs.
+Testez le jeu avec un nombre défini de joueurs pour vérifier son bon fonctionnement.
+Contraintes :
+
+Utilisez la programmation orientée objet (POO) en Java pour implémenter ce jeu.
+Gérez correctement les interactions entre les joueurs pour respecter les règles du jeu.
+Cet exercice permettra à vos élèves de mettre en pratique les concepts de la POO en Java en développant un jeu amusant où ils pourront implémenter des règles spécifiques et gérer les interactions entre les joueurs.
