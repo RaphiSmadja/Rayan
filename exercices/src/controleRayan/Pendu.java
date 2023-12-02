@@ -15,6 +15,8 @@ public class Pendu {
         Scanner scanner = new Scanner(System.in);
         String secretWord = scanner.next();
 
+        int a = 2;
+        Integer a2 = 4;
         // logic
         gameLogic(secretWord);
     }

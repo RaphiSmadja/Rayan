@@ -77,4 +77,52 @@ Contraintes :
 
 Utilisez la programmation orientée objet (POO) en Java pour implémenter ce jeu.
 Gérez correctement les interactions entre les joueurs pour respecter les règles du jeu.
-Cet exercice permettra à vos élèves de mettre en pratique les concepts de la POO en Java en développant un jeu amusant où ils pourront implémenter des règles spécifiques et gérer les interactions entre les joueurs.
+Attendu en console :
+
+Joueur 1 Raphael
+Joueur 2 Rayan
+Joueur 3 David
+
+Raphael quel est votre choix ? (1 pour tirer, 2 pour se protéger, 3 pour recharger)
+1
+Sur qui souhaitez vous tirer ?
+David
+
+Rayan quel est votre choix ? (1 pour tirer, 2 pour se protéger, 3 pour recharger)
+1
+Sur qui souhaitez vous tirer ?
+Raphael
+
+David quel est votre choix ? (1 pour tirer, 2 pour se protéger, 3 pour recharger)
+2
+
+Résultat du tour :
+Raphael à tirer sur David
+Rayan à tirer sur Raphael
+David s'est protéger
+Raphael à perdu un point de vie !
+Raphael 2 points de vie
+Rayan 3 points de vie
+David 3 points de vie
+
+Raphael quel est votre choix ? (1 pour tirer, 2 pour se protéger, 3 pour recharger)
+3
+
+Rayan quel est votre choix ? (1 pour tirer, 2 pour se protéger, 3 pour recharger)
+2
+
+David quel est votre choix ? (1 pour tirer, 2 pour se protéger, 3 pour recharger)
+1
+Sur qui souhaitez vous tirer ?
+Raphael
+
+Résultat du tour :
+Raphael à recharger une balle
+Rayan se protege
+David a tiré sur Raphael
+Raphael à perdu un point de vie !
+Raphael 1 points de vie
+Rayan 3 points de vie
+David 3 points de vie
+
+Le jeu s'arrete lorsqu'il reste plus qu'un joueur

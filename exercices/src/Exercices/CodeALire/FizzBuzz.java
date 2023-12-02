@@ -10,9 +10,11 @@ public class FizzBuzz {
             } else {
                 System.out.println(i);
             }
+
         }
     }
 }
+
 
 // 1
 // 2

@@ -3,41 +3,29 @@ import java.util.Scanner;
 
 public class PierrePapierCiseaux {
     public static void main(String[] args) {
-        Scanner scanner = new Scanner(System.in);
-        Random random = new Random();
+        // Tableau 2x2 A
+        int[][] tableauA = { {1, 2}, {3, 4} };
 
-        String[] choixPossibles = {"pierre", "papier", "ciseaux"};
+        // Tableau 2x2 B
+        int[][] tableauB = { {5, 6}, {7, 8} };
 
-        while (true) {
-            System.out.print("Choisissez pierre, papier ou ciseaux (ou quit pour sortir) : ");
-            String choixJoueur = scanner.nextLine().toLowerCase();
+        // Tableau résultant pour stocker l'addition
+        int[][] resultat = new int[2][2];
 
-            if (choixJoueur.equals("quit")) {
-                System.out.println("Au revoir !");
-                break;
+        // Addition des tableaux A et B
+        for (int i = 0; i < 2; i++) {
+            for (int j = 0; j < 2; j++) {
+                resultat[i][j] = tableauA[i][j] + tableauB[i][j];
             }
+        }
 
-            if (!choixJoueur.equals("pierre") && !choixJoueur.equals("papier") && !choixJoueur.equals("ciseaux")) {
-                System.out.println("Choix invalide. Veuillez choisir pierre, papier ou ciseaux.");
-                continue;
+        // Affichage du tableau résultant de l'addition
+        System.out.println("Tableau résultant de l'addition :");
+        for (int i = 0; i < resultat.length; i++) {
+            for (int j = 0; j < resultat[i].length; j++) {
+                System.out.print(resultat[i][j] + " ");
             }
-
-            int indexChoixOrdinateur = random.nextInt(3);
-            String choixOrdinateur = choixPossibles[indexChoixOrdinateur];
-
-            System.out.println("L'ordinateur choisit " + choixOrdinateur);
-
-            if (choixJoueur.equals(choixOrdinateur)) {
-                System.out.println("Égalité !");
-            } else if (
-                (choixJoueur.equals("pierre") && choixOrdinateur.equals("ciseaux")) ||
-                (choixJoueur.equals("ciseaux") && choixOrdinateur.equals("papier")) ||
-                (choixJoueur.equals("papier") && choixOrdinateur.equals("pierre"))
-            ) {
-                System.out.println("Vous gagnez !");
-            } else {
-                System.out.println("L'ordinateur gagne !");
-            }
+            System.out.println();
         }
     }
 }
