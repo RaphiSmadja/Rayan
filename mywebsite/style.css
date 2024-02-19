@@ -1,0 +1,12 @@
+ul {
+    background-color: chocolate;
+    margin: auto;
+}
+
+li {
+    color: #ffffff;
+    list-style: none;
+    display: inline-block;
+    margin: 10px auto;
+    padding: 5px;
+}
