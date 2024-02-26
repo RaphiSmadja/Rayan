@@ -1,3 +1,13 @@
+@font-face {
+    font-family: 'Roboto';
+    src: url('ressources/font/Roboto-Regular.ttf') format('ttf');
+}
+
+body {
+    font-family:'Courier New', Courier, monospace;
+    background-color: black;
+}
+
 ul {
     background-color: chocolate;
     margin: auto;
@@ -9,4 +19,28 @@ li {
     display: inline-block;
     margin: 10px auto;
     padding: 5px;
+}
+
+.presentation {
+    max-width: 960px;
+    border-radius: 10px;
+    margin: 15px auto;
+    background-color: chocolate;
+    padding: 15px;
+}
+
+h1 {
+    color: #ffffff;
+    text-align: center;
+    border-bottom: 1px solid #ffffff;
+}
+
+#separator {
+    background-color: chocolate;
+    height: 5px;
+}
+
+footer {
+    background-color: chocolate;
+    height: 50px;
 }
